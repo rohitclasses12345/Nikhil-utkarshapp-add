@@ -38,6 +38,7 @@ import aiofiles
 import zipfile
 import shutil
 import ffmpeg
+import utk
 
 # Initialize the bot
 bot = Client(
@@ -47,7 +48,7 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-AUTH_USER = os.environ.get('AUTH_USERS', '5680454765').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '6126688051').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 CHANNEL_OWNERS = {}
 CHANNELS = os.environ.get('CHANNELS', '').split(',')
